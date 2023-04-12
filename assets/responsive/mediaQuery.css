@@ -1,0 +1,467 @@
+
+
+@media screen 
+and (max-width: 1300px)
+{
+    /* header{
+        background-color: green;
+    } */
+    .landingPage .information .right h1{
+        font-size: 3rem;
+    }
+
+    /* CONTACT */
+
+
+    .contacte form{
+        width: 400px;
+        padding: 30px;
+    }
+
+
+    
+}
+
+@media screen 
+and (max-width: 1200px)
+{
+    /* header{
+        background-color: red;
+    } */
+    .landingPage .information .right h1{
+        font-size: 2rem;
+    }
+
+    .landingPage .information .right .contact>span{
+        font-size: 14px;
+    }
+
+    /* SKILLS */
+
+    .skill .contentCard .card span h1{
+        font-weight: normal;
+        font-size: 25px;
+        color: var(--blue);
+    }
+    
+    .skill .contentCard .card span img{
+        width: 25px;
+    }
+
+    .skill .contentCard .card span .number{
+        font-size: 6rem;
+    }
+}
+
+@media screen 
+and (max-width: 1000px)
+{
+    /* header{
+        background-color: blue;
+    } */
+
+    .landingPage .information .right .contact>span{
+        font-size: 10px;
+    }
+    
+
+    /* ABOUT */
+    
+    .about .img img{
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 10rem;
+        z-index: -1;
+    }
+    
+    .about h1{
+        font-size: 2rem;
+    }
+    
+    .about .contentDesc{
+        font-size: 20px;
+        margin-top: 10rem;
+    }
+
+
+    /* SKILL */
+
+    .skill h1{
+        font-size: 2rem;
+    }
+    
+    .skill .contentDesc p{
+        font-size: 20px;
+    }
+
+    /* POJECT */
+    .Myproject {
+        margin-top: 5rem;
+    }
+
+    .Myproject h1{
+        font-size: 2rem;
+    }
+    
+    .Myproject .contentDesc{
+        font-size: 20px;
+        
+    }
+
+    /* MY PROJECT */
+
+    .Myproject .contentProjet .item{
+        width: 320px;
+    }
+
+    /* COMPETENCE */
+
+    /* *********** LANGAGE ****************** */
+
+.competence .langages span h2{
+    font-size: 14px;
+}
+
+.competence .langages span img{
+    width: 75px;
+}
+
+
+
+/* *********** FRAMEWORK ****************** */
+
+
+.competence .Frameworks span h2{
+    font-size: 14px;
+}
+
+.competence .Frameworks span img{
+    width: 75px;
+}
+
+
+/* *********** ADOBE ****************** */
+
+
+.competence .adobes span h2{
+    font-size: 12px;
+}
+
+.competence .adobes span img{
+    width: 75px;
+}
+
+
+
+/* *********** AUTRE ****************** */
+
+.competence .autres span h2{
+    font-size: 14px;
+}
+
+.competence .autres span img{
+    width: 75px;
+}
+
+}
+
+
+
+
+
+@media screen 
+and (max-width: 850px)
+{
+    /* header{
+        background-color: yellow;
+    } */
+    /* LANDING PAGE  */
+
+    .landingPage .information{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .landingPage .information .left{
+        display: none;
+    }
+
+    .landingPage .information .right h1{
+        font-size: 3.5rem;
+    }
+
+ 
+
+    .landingPage .information .right .contact>span p{
+        display: none;
+    }
+
+
+    /* SKILLS */
+
+    .skill .contentCard{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .skill .contentCard .card span h1{
+        font-weight: normal;
+        font-size: 35px;
+        color: var(--blue);
+    }
+    
+    .skill .contentCard .card span img{
+        width: 35px;
+    }
+
+    .skill .contentCard .card span .number{
+        font-size: 8rem;
+    }
+
+        /* CONTACT */
+    .contacte .img{
+        display: none;
+    }
+
+    .contacte{
+        display: grid;
+        place-content: center;
+    }
+
+    .contacte form{
+        width: 400px;
+    }
+
+    /* MY PROJECT */
+
+    .Myproject .contentProjet .item{
+        width: 500px;
+    }
+
+    .Myproject .contentProjet .item .img{
+        height: auto;
+    }
+    
+}
+
+
+
+@media screen 
+and (max-width: 750px)
+{
+    /* header{
+        background-color: violet;
+    } */
+
+
+    /* COMPETENCE */
+    .competence .contentCompetence{
+        margin-top: 5rem;
+    }
+
+    .competence .listCompetence{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .competence .contentCompetence h1{
+        font-size: 20px;
+        text-align: left;
+    }
+
+
+    .competence .contentCompetence nav{
+        width: 100%;
+    }
+
+    .competence .contentCompetence nav span{
+        font-size: 12px;
+    }
+
+    .competence .contentCompetence .trace2{
+        width: 80px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .Myproject .contentProjet .item{
+        width: 100%;
+    }
+
+    .owl-nav{
+        display: none;
+    }
+
+
+
+}
+
+/* =========== POUR SMARTPHONE =========== */
+
+@media screen 
+and (max-width: 600px)
+{
+
+    .containerTwo{
+        width: 90%;
+        margin: auto;
+    }
+    /* header{
+        background-color: brown;
+    } */
+
+
+    /* LANDING PAGE */
+
+    .landingPage .information .right h1{
+        font-size: 3rem;
+    }
+
+    /* MY PROJECT */
+
+    .Myproject .contentProjet .item{
+        width: 100%;
+    }
+
+    .owl-nav{
+        display: none;
+    }
+
+    
+    /* COMPETENCE */
+
+    /* *********** LANGAGE ****************** */
+
+.competence .langages span h2{
+    font-size: 14px;
+}
+
+.competence .langages span img{
+    width: 75px;
+}
+
+.competence .contentCompetence{
+    height: auto;
+    width: 400px;
+}
+
+.competence .listCompetence{
+    margin-top: 25px;
+}
+
+.competence .langages{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* *********** ADOBE ****************** */
+
+
+.competence .adobes{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+
+}
+
+
+
+
+@media screen 
+and (max-width: 400px)
+{
+
+    /* SKILL */
+
+        /* SKILLS */
+    
+        .skill .contentCard .card span h1{
+            font-weight: normal;
+            font-size: 25px;
+            color: var(--blue);
+        }
+        
+        .skill .contentCard .card span img{
+            width: 25px;
+        }
+    
+        .skill .contentCard .card span .number{
+            font-size: 5rem;
+        }
+        .skill .contentCard .card{
+            width: 75%;
+            margin: auto;
+        }
+
+
+    /* COMPETENCE */
+
+    .competence .contentCompetence{
+        width: 340px;
+    }
+
+    .contacte form{
+        width: 340px;
+    }
+
+    
+
+    .owl-nav{
+        display: none;
+    }
+
+    .competence .pinkOne{
+        width: 400px;
+        height: 400px;
+        top: 15rem;
+}
+
+    /* MY PROJECT */
+    
+
+    .Myproject {
+        margin-top: 5rem;
+    }
+
+    .Myproject .contentProjet .item{
+        width: 100%;
+    }
+
+    /* CONTACT */
+
+    .contacte .img{
+        display: none;
+    }
+
+    .contacte form{
+        width: 320px;
+    }
+
+    
+.contacte .contentForm{
+    height: auto;
+}
+
+.contacte .contentForm .inpu{
+    gap: 15px;
+}
+
+.contacte form .contentForm h3{
+    font-size: 15px;
+}
+
+.contacte form .contentForm h1{
+    font-size: 22px;
+}
+
+.contacte form .contentForm span{
+    font-size: 14px;
+}
+
+
+
+}

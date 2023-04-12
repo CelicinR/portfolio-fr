@@ -1,0 +1,686 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+:root{
+    --red:#E81212;
+    --blackOne:#18182B;
+    --gray:#8D9AAE;
+    --yellow:#FFC420;
+    --blue:#2055E8;
+    --blackTwo:#141431;
+    --bg:#0F0F10;
+    --white:#ffffff;
+    --colorInput: #2C2C47;
+}
+
+button{
+    cursor: pointer;
+}
+
+.containerOne{
+    width: 85%;
+    margin: auto;
+}
+.containerTwo{
+    width: 70%;
+    margin: auto;
+}
+
+
+body{
+    background: var(--bg);
+    position: relative;
+}
+
+/* **************** PARTIE LANDING PAGE ***************** */
+
+.landingPage{
+    height: 100vh;
+}
+
+.landingPage .pinkOne{
+    background: radial-gradient(circle, #d80050 0%, rgba(216,0,81,0) 70%);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 0;
+    top: 400px;
+    background-repeat: no-repeat;
+    background-position-x: 200px;
+    animation: gradientAnim 3s ease alternate-reverse infinite;
+    z-index: -1;
+}
+
+.landingPage .pinkTwo{
+    background: radial-gradient(circle, #d80050 0%, rgba(216,0,81,0) 70%);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -300px;
+    top: -300px;
+    background-repeat: no-repeat;
+    animation: gradientAnim 3s ease alternate-reverse infinite;
+    z-index: -1;
+}
+
+
+.landingPage header .logo, .menu{
+    width: 40px;
+    z-index: 1;
+}
+
+.landingPage header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.landingPage .information{
+    display: grid;
+    place-content: center;
+    height: 80%;
+    color: var(--white);
+    grid-template-columns: repeat(2,1fr);
+}
+
+.landingPage .information .left{
+    width: 90%;
+}
+
+
+
+.landingPage .information .right{
+    position: relative;
+}
+
+.landingPage .information .right h1{
+    font-size: 4rem;
+}
+
+.landingPage .information .right button{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.landingPage .information .right .contact{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.landingPage .information .right .contact>span{
+    display: flex;
+    align-items: center;
+}
+
+.landingPage .information .right .contact span img{
+    width: 30px;
+}
+
+
+/* ****************** PARTIE ABOUT ME ******************** */
+
+.about{
+    height: 80vh;
+    position: relative;
+    color: var(--white);
+}
+
+.about .img img{
+    width: 300px;
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    z-index: -1;
+}
+
+.about h1{
+    font-size: 3rem;
+}
+
+.about .contentDesc{
+    font-size: 25px;
+    margin-top: 10rem;
+}
+
+
+/* ****************** PARTIE SKILL ******************** */
+
+
+.skill{
+    color: var(--white);
+}
+
+.skill h1{
+    font-size: 3rem;
+}
+
+.skill .contentDesc p{
+    font-size: 25px;
+    margin-top: 23px;
+}
+
+.skill .contentCard{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.skill .contentCard .card{
+    background: var(--white);
+    border-radius: 18px;
+    position: relative;
+    padding: 10px;
+}
+
+.skill .contentCard .card .grille{
+    width: 170px;
+    position: absolute;
+    right: -7px;
+    bottom: 0;
+}
+
+.skill .contentCard .card span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--blackOne);
+}
+
+.skill .contentCard .card span .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--blackOne);
+}
+
+.skill .contentCard .card span h1{
+    font-weight: normal;
+    font-size: 40px;
+    color: var(--blue);
+}
+
+.skill .contentCard .card span img{
+    width: 35px;
+}
+
+.skill .contentCard .card span .img{
+    background: var(--blue);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.skill .contentCard .card span .number{
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--yellow);
+    z-index: 1;
+}
+
+
+
+/* ****************** PARTIE MY PROJECT ******************** */
+
+.Myproject{
+    margin-top: 10%;
+    position: relative;
+    
+}
+.Myproject h1{
+    color: var(--white);
+    font-size: 3rem;
+}
+
+.Myproject .contentDesc{
+    font-size: 25px;
+    margin-top: 23px;
+    color: var(--white);
+}
+
+/* owl carousel */
+
+.owl-nav{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-nav span{
+    font-size: 40px;
+    background: var(--gray);
+}
+
+.Myproject .contentProjet{
+    margin-top: 80px;
+    cursor:e-resize;
+}
+
+.Myproject .contentProjet .item{
+    background: var(--blackTwo);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    border-radius: 28px;
+    position: relative;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.Myproject .contentProjet .item .img{
+    background: var(--white);
+    padding: 10px;
+    height: 22vh;
+}
+
+.Myproject .contentProjet .item .description{
+    width: 100%;
+    margin-top: 0;
+}
+.Myproject .contentProjet .item .description h1{
+    color: var(--blue);
+    font-size: 18px;
+}
+
+
+.Myproject .contentProjet .item .description .techno{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.Myproject .contentProjet .item .btn{
+    display: flex;
+    gap: 20px;
+}
+
+
+.Myproject .contentProjet .item .btn button{
+    padding: 3px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Myproject .contentProjet .item .btn .visite{
+    background: var(--yellow);
+    font-weight: bold;
+}
+
+.Myproject .contentProjet .item .btn .video{
+    border: 2px solid var(--blue);
+    font-weight: bold;
+}
+
+.Myproject .contentProjet .item .btn img{
+    width: 30px;
+}
+
+
+
+
+
+/* ****************** PARTIE MY COMPETENCE ******************** */
+
+.competence{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.competence .pinkOne{
+        background: radial-gradient(circle, #C4DA32 0%, #d8005100 70%);
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        left: -6rem;
+        top: 3rem;
+        z-index: -1;
+}
+
+.competence span{
+    position: relative;
+    cursor: pointer;
+}
+
+
+.competence .active::after{
+        content: "";
+        position: absolute;
+        background: var(--yellow);
+        height: 5px;
+        width: 100%;
+        left: 0;
+        bottom: -13px;
+        transition: 0.3s;
+        transition-timing-function: cubic-bezier(0.5,1.6,0.5,0.7);
+    }
+
+.competence .listCompetence .block{
+    display: none;
+}
+
+/* *********** LANGAGE ****************** */
+
+
+.competence .listCompetence{
+    margin:auto;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.competence .langages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+.competence .langages span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.competence .langages span img{
+    width: 100px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+/* *********** FRAMEWORK ****************** */
+
+
+.competence .Frameworks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+.competence .Frameworks span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.competence .Frameworks span img{
+    width: 100px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* *********** ADOBE ****************** */
+
+
+.competence .adobes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+.competence .adobes span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.competence .adobes span img{
+    width: 100px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+
+/* *********** AUTRE ****************** */
+
+
+.competence .autres{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+}
+
+.competence .autres span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.competence .autres span img{
+    width: 100px;
+    background: var(--white);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+.competence .contentCompetence{
+    background: var(--blackOne);
+    height: 60vh;
+    border-radius: 25px;
+    position: relative;
+    padding: 25px;
+}
+.competence .contentCompetence .trace1{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.competence .contentCompetence .trace2{
+    width: 135px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.competence .contentCompetence h1{
+    color: var(--white);
+    text-align: center;
+    z-index: 1;
+}
+
+.competence .contentCompetence nav{
+    margin-top: 30px;
+    color: var(--white);
+    width: 80%;
+    display: flex;
+    gap: 25px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+
+/* ****************** PARTIE MY CONTACT ******************** */
+.contentContact{
+    background: url('assets/images/signupGif.gif') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contacte{
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.contacte .contentForm{
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    z-index: 1;
+}
+
+.contacte .contentForm .inpu{
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacte form .contentForm h3{
+    color: #ffffff57;
+    font-weight: normal;
+}
+
+.contacte form .contentForm h1{
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.contacte form .contentForm span{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--white);
+}
+
+.contacte form .contentForm span #name, #email{
+    height: 2rem;
+    background: var(--colorInput);
+    border: none;
+    border-radius: 5px;
+    opacity: 0.6;
+    padding: 5px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.contacte form .contentForm span #message{
+    height: 8rem;
+    background: var(--colorInput);
+    border: none;
+    border-radius: 5px;
+    opacity: 0.6;
+    padding: 5px;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.contacte form .contentForm button{
+    padding: 7px;
+    width: 30%;
+    font-weight: bold;
+    background: var(--colorInput);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+}
+
+.contacte form{
+    background: var(--blackOne);
+    height: auto;
+    padding: 65px;
+    width: 500px;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacte .img{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+.contacte form .trace1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 130px;
+}
+.contacte form .trace2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+}
+
+/* ****************** PARTIE FOOTER ******************** */
+
+footer{
+    background: var(--blackOne);
+    height: auto;
+    padding: 20px;
+}
+
+footer .logo{
+    width: 60px;
+    margin: auto;
+}
+
+footer p{
+    color: var(--white);
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer hr{
+    width: 70%;
+    margin: auto;
+}
+
+
+
